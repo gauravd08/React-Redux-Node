@@ -1,0 +1,374 @@
+{
+	"id": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+	"name": "react-node-test",
+	"description": "",
+	"order": [
+		"40508eaa-d11c-2df2-f293-afedb3065be6",
+		"f68f0de5-7778-377d-ef8a-21c3584bcdad",
+		"7a0d051a-1dca-0e17-754f-45f8c551b94e",
+		"43e4a8f2-5fb4-3cb4-3243-8f110bfe4118",
+		"fd477230-4a50-b518-e8f1-b80d60fdd8c1",
+		"0da676cf-9306-0f1d-84d6-888e1e6a8ce2",
+		"440a0c71-ba57-fadd-1fd0-1fb7e3ddbdbb",
+		"60aecd74-2a65-d013-0606-80423d69cb16"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1560851932441,
+	"owner": "4395830",
+	"public": false,
+	"requests": [
+		{
+			"id": "0da676cf-9306-0f1d-84d6-888e1e6a8ce2",
+			"headers": "token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics/toggle/2/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560938008739,
+			"name": "Toggle Graphic",
+			"description": "Graphic toggle statuc",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		},
+		{
+			"id": "40508eaa-d11c-2df2-f293-afedb3065be6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/users/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560937486179,
+			"name": "Register",
+			"description": "Register User",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"techformation.gaurav@gmail.com\",\n\t\"role\": 2,\n\t\"password\": \"123456\",\n\t\"firstname\": \"gaurav\",\n\t\"lastname\": \"dhiman\",\n\t\"created_by\": 1,\n\t\"created_at\": \"2019-01-01\",\n\t\"updated_at\": \"2019-01-01\",\n\t\"updated_by\": 0\n}"
+		},
+		{
+			"id": "43e4a8f2-5fb4-3cb4-3243-8f110bfe4118",
+			"headers": "enctype: multipart/form-data\ntoken: {{token}}\n",
+			"headerData": [
+				{
+					"key": "enctype",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics/update/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "type",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "update graphic",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "update.jpg",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "caption",
+					"value": "This image is updated to nature",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "link",
+					"value": "http://www.updated.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "link_text",
+					"value": "Click here to update",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updated_at",
+					"value": "2020-06-18",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "v2MM2bmf4JRyRBTV9MUIG6ocl_Sbl49BSy_gymKSOWc.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560937845650,
+			"name": "Update Graphic",
+			"description": "Graphic update",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		},
+		{
+			"id": "440a0c71-ba57-fadd-1fd0-1fb7e3ddbdbb",
+			"headers": "token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics/view/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560938983378,
+			"name": "View Graphic",
+			"description": "Graphic view",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		},
+		{
+			"id": "60aecd74-2a65-d013-0606-80423d69cb16",
+			"headers": "token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560938986123,
+			"name": "Graphics Summary",
+			"description": "Graphics summary",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		},
+		{
+			"id": "7a0d051a-1dca-0e17-754f-45f8c551b94e",
+			"headers": "token: {{token}}\nenctype: multipart/form-data\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "enctype",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "first graphic",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "s.jpg",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "caption",
+					"value": "This image is related to nature",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "link",
+					"value": "http://www.google.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "link_text",
+					"value": "Click here",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "created_at",
+					"value": "2019-06-18",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updated_at",
+					"value": "2019-06-18",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "one.png",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560937703703,
+			"name": "Add Graphic",
+			"description": "Graphic add",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		},
+		{
+			"id": "f68f0de5-7778-377d-ef8a-21c3584bcdad",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/users/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560937570418,
+			"name": "Login",
+			"description": "Login",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"techformation.gaurav@gmail.com\",\n\t\"password\": \"123456\"\n}"
+		},
+		{
+			"id": "fd477230-4a50-b518-e8f1-b80d60fdd8c1",
+			"headers": "token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/graphics/delete/3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560938974860,
+			"name": "Delete Graphic",
+			"description": "Graphic delete",
+			"collectionId": "4a41fc35-a57a-1bf8-ea9d-5384b6fbc6d0",
+			"responses": []
+		}
+	]
+}
